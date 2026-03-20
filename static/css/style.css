@@ -639,16 +639,6 @@ a:hover {
 }
 
 /* ========== Organization ========== */
-.sponsor-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 560px);
-    justify-content: center;
-}
-
-.sponsor-card {
-    width: 100%;
-}
-
 .organization-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -741,10 +731,6 @@ a:hover {
 
     .awards-grid {
         grid-template-columns: 1fr;
-    }
-
-    .sponsor-grid {
-        grid-template-columns: minmax(0, 1fr);
     }
 
     .organization-logo-wrap {
