@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldArena Challenge @ CVPR 2026</title>
-    <meta name="description" content="WorldArena Challenge: Evaluating Embodied World Models on Perception and Functional Utility. CVPR 2026 Workshop Challenge.">
+    <meta name="description" content="WorldArena Challenge @ CVPR 2026: World Model Challenge for evaluating embodied world models on perception and functional utility.">
     <meta property="og:title" content="WorldArena Challenge @ CVPR 2026">
-    <meta property="og:description" content="A standardized evaluation protocol for embodied world models, focusing on both perceptual fidelity and functional utility.">
+    <meta property="og:description" content="A CVPR 2026 world model challenge for evaluating embodied world models on both perceptual quality and functional utility.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#schedule">Dates</a></li>
             <li><a href="#overview">Overview</a></li>
-            <li><a href="#tracks">Submission</a></li>
+            <li><a href="#tracks">Tracks</a></li>
             <li><a href="#awards">Awards</a></li>
             <li><a href="#organization">Organization</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -38,10 +38,10 @@
 <!-- Hero Section -->
 <header class="hero">
     <div class="container">
-        <p class="hero-venue">CVPR 2026 Workshop Challenge</p>
+        <p class="hero-venue">CVPR 2026</p>
         <h1 class="hero-title">WorldArena Challenge</h1>
         <h2 class="hero-subtitle">Evaluating Embodied World Models on<br>Perception and Functional Utility</h2>
-        <p class="hero-context">Held in conjunction with the <a href="https://videoworldmodel-workshop.github.io/" target="_blank" rel="noopener noreferrer">CVPR 2026 Workshop on Video World Models</a></p>
+        <p class="hero-context">World Model Challenge<br>Held in conjunction with the <a href="https://videoworldmodel-workshop.github.io/" target="_blank" rel="noopener noreferrer">CVPR 2026 Workshop on Video World Models</a><br>June 25, 2026 &middot; Denver, USA</p>
         <div class="hero-links">
             <a href="https://github.com/tsinghua-fib-lab/WorldArena" class="hero-link" target="_blank"><i class="fab fa-github"></i> Code</a>
             <a href="http://world-arena.ai/" class="hero-link" target="_blank"><i class="fas fa-globe"></i> Website</a>
@@ -63,6 +63,16 @@
                     <div class="flex-1">
                         <h4 class="text-lg font-bold text-slate-100">Submission Opens</h4>
                         <p class="text-slate-300">Challenge submission portal opens for participating teams.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative pl-8 md:pl-0">
+                <div class="absolute -left-3 top-0 md:-left-11 w-6 h-6 bg-sky-400 rounded-full border-4 border-slate-900"></div>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <div class="md:w-36 font-bold text-sky-300 mb-1 md:mb-0">2026.04.25</div>
+                    <div class="flex-1">
+                        <h4 class="text-lg font-bold text-slate-100">Mid-competition Ranking Release</h4>
+                        <p class="text-slate-300">The ranking results of mid-stage checkpoints will be released.</p>
                     </div>
                 </div>
             </div>
@@ -99,24 +109,24 @@
         <h2 class="section-title">Challenge Overview</h2>
         <div class="text-block">
             <p>
-                The <strong>WorldArena Challenge</strong> aims to establish a standardized evaluation protocol for embodied world models,
-                focusing on both <strong>perceptual fidelity</strong> and <strong>functional utility</strong>.
+                The <strong>WorldArena Challenge</strong> is the CVPR 2026 world model challenge built on <strong>WorldArena</strong>,
+                a unified benchmark for evaluating embodied world models beyond visual realism alone.
             </p>
             <p>
-                World models have recently emerged as a key paradigm for embodied intelligence, enabling agents to simulate future
-                environments through video generation and latent dynamics modeling. However, existing evaluation protocols remain
-                largely limited to visual quality metrics, failing to capture whether generated environments are actually usable for
-                downstream decision-making.
+                Our goal is to evaluate whether a world model is not only perceptually convincing, but also functionally useful for
+                embodied decision-making, simulation, and control. The challenge therefore emphasizes both <strong>perception quality</strong>
+                and <strong>functional utility</strong> in a single evaluation setting.
             </p>
             <p>
-                To address this limitation, WorldArena introduces a unified benchmark that evaluates models along two tracks as follows:
+                Participants compete on two complementary tracks inspired by the official benchmark and the poster overview:
             </p>
             <ul class="mt-2 space-y-3 pl-6 text-slate-300 text-[1.05rem] leading-9 list-disc marker:text-sky-300">
                 <li><strong class="text-slate-100">Track 1: Video Perception Quality</strong> — evaluating visual quality, motion quality, content consistency, physics adherence, 3D accuracy, and controllability.</li>
-                <li><strong class="text-slate-100">Track 2: Embodied Task Functionality</strong> — whether generated worlds support action planning and policy training/evaluation.</li>
+                <li><strong class="text-slate-100">Track 2: Embodied Task Functionality</strong> — evaluating generated worlds as embodied data engines, policy evaluators, and action planners for downstream tasks.</li>
             </ul>
             <p>
-                This challenge provides a platform to benchmark models under a holistic evaluation paradigm, encouraging progress toward functional world simulators rather than purely visual generators.
+                By combining the two tracks, the challenge provides a holistic benchmark that encourages progress toward world simulators
+                that are realistic, controllable, and useful for real embodied AI applications.
             </p>
         </div>
     </div>
@@ -127,14 +137,14 @@
 <!-- Competition Tracks -->
 <section class="section" id="tracks">
     <div class="container container-narrow">
-        <h2 class="text-3xl font-bold text-center mb-12 text-slate-100">Evaluation &amp; Submission</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-slate-100">Tracks &amp; Submission</h2>
         <div class="grid md:grid-cols-2 gap-8">
             <div class="bg-slate-900/70 rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 border border-slate-700/60 backdrop-blur-sm">
                 <div class="p-8">
                     <div class="uppercase tracking-wide text-sm text-blue-300 font-semibold mb-2">Track 1</div>
                     <h3 class="text-2xl font-bold text-slate-100 mb-4">Video Quality</h3>
                     <p class="text-slate-300 mb-6">
-                        Evaluating visual quality, temporal consistency, semantic alignment, and related dimensions.
+                        Evaluate video perception quality across visual quality, motion quality, content consistency, physics adherence, 3D accuracy, and controllability.
                     </p>
                     <div class="mt-6 flex items-start justify-between gap-6">
                         <div class="flex-1">
@@ -194,7 +204,7 @@
                     <div class="uppercase tracking-wide text-sm text-purple-300 font-semibold mb-2">Track 2</div>
                     <h3 class="text-2xl font-bold text-slate-100 mb-4">Functional Performance </h3>
                     <p class="text-slate-300 mb-6">
-                        Evaluating whether generated worlds preserve decision-relevant dynamics and support embodied tasks.
+                        Evaluate whether generated worlds preserve decision-relevant dynamics and support embodied tasks such as data synthesis, policy evaluation, and action planning.
                     </p>
                     <div class="mt-6 flex items-start justify-between gap-6">
                         <div class="flex-1">
@@ -244,10 +254,10 @@
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16Zm-1-5h2v2H9v-2Zm0-8h2v6H9V5Z"></path></svg>
                             </span>
                             <span class="text-sm font-bold text-orange-400 mr-1">NOTICE:</span>
-                            <span class="text-sm font-semibold text-purple-300">Track-specific links are being updated</span>
+                            <span class="text-sm font-semibold text-purple-300">Track-specific resources continue to be updated</span>
                         </div>
                         <p class="text-sm text-slate-400 font-semibold">Current Link Status:</p>
-                        <p class="text-slate-200">Temporary links in use</p>
+                        <p class="text-slate-200">Guide, dataset, and leaderboard links will be refreshed as resources are finalized</p>
                     </div>
                 </div>
             </div>
@@ -265,7 +275,7 @@
     <div class="container container-narrow">
         <h2 class="section-title">Awards</h2>
         <div class="rounded-2xl border border-slate-700/60 bg-slate-900/70 shadow-xl p-8 md:p-10 backdrop-blur-sm">
-            <p class="text-center text-sm text-slate-300 mb-6">Awards are given separately per track: Track 1 and Track 2 each have 1st, 2nd, and 3rd prizes.</p>
+            <p class="text-center text-sm text-slate-300 mb-6">Awards are given separately for the two challenge tracks, and each track includes 1st, 2nd, and 3rd prizes.</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="rounded-2xl border border-sky-300/25 bg-sky-400/5 p-6 shadow-lg">
                     <div class="flex items-center justify-between gap-4 mb-5">
@@ -360,39 +370,126 @@
 <!-- Organization -->
 <section class="section" id="organization">
     <div class="container container-narrow">
-        <h2 class="section-title">Organization</h2>
+        <h2 class="section-title">Organizers</h2>
         <div class="organization-grid">
-            <a href="https://amap-cvlab.github.io/" class="organization-item" target="_blank" rel="noopener noreferrer" aria-label="Amap CV Lab">
+            <div class="organization-item">
                 <div class="organization-card">
+                    <img src="static/img/person/Mu%20Xu_AMAP_1.png" alt="Mu Xu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Mu Xu</div>
+                <div class="organization-affiliation">AMAP</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Zhicheng%20Liu_AMAP_2.png" alt="Zhicheng Liu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Zhicheng Liu</div>
+                <div class="organization-affiliation">AMAP</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Wei%20Wu_Manifold%20AI_3.png" alt="Wei Wu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Wei Wu</div>
+                <div class="organization-affiliation">Manifold AI</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Yu%20Shang_THU_4.png" alt="Yu Shang portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Yu Shang</div>
+                <div class="organization-affiliation">THU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Huazhe%20Xu_THU_5.png" alt="Huazhe Xu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Huazhe Xu</div>
+                <div class="organization-affiliation">THU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Dhruv%20Shah_Princeton_6.png" alt="Dhruv Shah portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Dhruv Shah</div>
+                <div class="organization-affiliation">Princeton</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Tat-seng%20Chua_NUS_7.png" alt="Tat-seng Chua portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Tat-seng Chua</div>
+                <div class="organization-affiliation">NUS</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Hongyang%20Li_HKU_8.png" alt="Hongyang Li portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Hongyang Li</div>
+                <div class="organization-affiliation">HKU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Chen%20Gao_THU_9.png" alt="Chen Gao portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Chen Gao</div>
+                <div class="organization-affiliation">THU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Wenwu%20Zhu_THU_10.png" alt="Wenwu Zhu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Wenwu Zhu</div>
+                <div class="organization-affiliation">THU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Xihui%20Liu_HKU_11.png" alt="Xihui Liu portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Xihui Liu</div>
+                <div class="organization-affiliation">HKU</div>
+            </div>
+            <div class="organization-item">
+                <div class="organization-card">
+                    <img src="static/img/person/Yong%20Li_THU_12.png" alt="Yong Li portrait" class="organization-avatar" loading="lazy">
+                </div>
+                <div class="organization-name">Yong Li</div>
+                <div class="organization-affiliation">THU</div>
+            </div>
+        </div>
+        <h2 class="section-title organization-section-title-secondary">Organization</h2>
+        <div class="organization-logo-grid">
+            <a href="https://amap-cvlab.github.io/" class="organization-logo-item" target="_blank" rel="noopener noreferrer" aria-label="Amap CV Lab">
+                <div class="organization-logo-card">
                     <div class="organization-logo-wrap">
                         <img src="static/img/normalized/amap.png" alt="Amap CV Lab logo" class="organization-logo">
                     </div>
                 </div>
-                <div class="organization-name">Amap CV Lab</div>
+                <div class="organization-logo-name">Amap CV Lab</div>
             </a>
-            <a href="https://manifoldai.cn/" class="organization-item" target="_blank" rel="noopener noreferrer" aria-label="Manifold Space">
-                <div class="organization-card">
+            <a href="https://manifoldai.cn/" class="organization-logo-item" target="_blank" rel="noopener noreferrer" aria-label="Manifold AI">
+                <div class="organization-logo-card">
                     <div class="organization-logo-wrap">
-                        <img src="static/img/normalized/manifold.png" alt="Manifold Space logo" class="organization-logo">
+                        <img src="static/img/normalized/manifold.png" alt="Manifold AI logo" class="organization-logo">
                     </div>
                 </div>
-                <div class="organization-name">Manifold AI</div>
+                <div class="organization-logo-name">Manifold AI</div>
             </a>
-            <a href="https://www.tsinghua.edu.cn/en/" class="organization-item" target="_blank" rel="noopener noreferrer" aria-label="Tsinghua University">
-                <div class="organization-card">
+            <a href="https://www.tsinghua.edu.cn/en/" class="organization-logo-item" target="_blank" rel="noopener noreferrer" aria-label="Tsinghua University">
+                <div class="organization-logo-card">
                     <div class="organization-logo-wrap">
                         <img src="static/img/normalized/tsinghua.png" alt="Tsinghua University logo" class="organization-logo">
                     </div>
                 </div>
-                <div class="organization-name">Tsinghua University</div>
+                <div class="organization-logo-name">Tsinghua University</div>
             </a>
-            <a href="https://www.hku.hk/" class="organization-item" target="_blank" rel="noopener noreferrer" aria-label="The University of Hong Kong">
-                <div class="organization-card">
+            <a href="https://www.hku.hk/" class="organization-logo-item" target="_blank" rel="noopener noreferrer" aria-label="The University of Hong Kong">
+                <div class="organization-logo-card">
                     <div class="organization-logo-wrap">
                         <img src="static/img/normalized/hku.png" alt="The University of Hong Kong logo" class="organization-logo">
                     </div>
                 </div>
-                <div class="organization-name">The University of Hong Kong</div>
+                <div class="organization-logo-name">The University of Hong Kong</div>
             </a>
         </div>
     </div>

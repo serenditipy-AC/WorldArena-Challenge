@@ -641,15 +641,15 @@ a:hover {
 /* ========== Organization ========== */
 .organization-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px 16px;
 }
 
 .organization-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     text-decoration: none;
 }
 
@@ -658,6 +658,72 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: min(100%, 126px);
+    aspect-ratio: 1;
+    padding: 4px;
+    border: 1px solid rgba(139, 205, 255, 0.28);
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(26, 52, 80, 0.95), rgba(10, 22, 38, 0.95));
+    overflow: hidden;
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.22);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.organization-card::before {
+    display: none;
+}
+
+.organization-item:hover .organization-card {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.26);
+    border-color: rgba(139, 205, 255, 0.5);
+}
+
+.organization-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center top;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.organization-name {
+    color: var(--text);
+    width: 100%;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.96rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.organization-section-title-secondary {
+    margin-top: 38px;
+}
+
+.organization-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.organization-logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.organization-logo-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     aspect-ratio: 1400 / 320;
     padding: 4px;
     border: 1px solid rgba(255, 255, 255, 0.95);
@@ -668,11 +734,7 @@ a:hover {
     transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.organization-card::before {
-    display: none;
-}
-
-.organization-item:hover .organization-card {
+.organization-logo-item:hover .organization-logo-card {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
@@ -699,7 +761,7 @@ a:hover {
     transform-origin: center;
 }
 
-.organization-name {
+.organization-logo-name {
     color: var(--text-soft);
     width: 100%;
     text-align: center;
@@ -719,7 +781,6 @@ a:hover {
     padding: 24px 28px;
     border-top: 1px solid var(--line);
     color: var(--text-muted);
-    text-align: center;
     font-family: var(--mono);
     font-size: 0.76rem;
     letter-spacing: 0.06em;
@@ -750,6 +811,14 @@ a:hover {
 
     .awards-grid {
         grid-template-columns: 1fr;
+    }
+
+    .organization-grid {
+        gap: 20px 14px;
+    }
+
+    .organization-card {
+        width: min(100%, 114px);
     }
 
     .organization-logo-wrap {
@@ -831,6 +900,19 @@ a:hover {
         margin-bottom: 8px;
         white-space: normal;
     }
+
+    .organization-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px 12px;
+    }
+
+    .organization-card {
+        width: min(100%, 110px);
+    }
+
+    .organization-logo-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 540px) {
@@ -883,13 +965,19 @@ a:hover {
         padding: 16px 16px 16px 18px;
     }
 
-    .organization-card {
-        grid-column: auto;
-        aspect-ratio: 1400 / 340;
-        padding: 4px;
+    .organization-name {
+        font-size: 1.1rem;
     }
 
-    .organization-name {
+    .organization-section-title-secondary {
+        margin-top: 30px;
+    }
+
+    .organization-card {
+        width: min(100%, 96px);
+    }
+
+    .organization-logo-name {
         font-size: 0.86rem;
         font-weight: 800;
         letter-spacing: 0.05em;
@@ -907,7 +995,11 @@ a:hover {
 
 @media (max-width: 640px) {
     .organization-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .organization-section-title-secondary {
+        margin-top: 30px;
     }
 }
 
